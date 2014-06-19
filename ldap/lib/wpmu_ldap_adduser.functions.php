@@ -2,7 +2,7 @@
 
 function ldap_addmenuuser() {
         $objCurrUser = wp_get_current_user();
-        $objUser = wp_cache_get($objCurrUser->id, 'users');
+        $objUser = wp_cache_get($objCurrUser->ID, 'users');
 
         if (function_exists('add_submenu_page')) {
                 // does not use add_options_page, because it is site-wide configuration,
